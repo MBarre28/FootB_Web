@@ -1,0 +1,20 @@
+{% extends "master.html" %}
+
+{% block title %}
+
+Details about - {{mymembers.lastname}}, {{mymembers.firstname}}
+
+{% endblock title %}
+
+
+{% block content %}
+<div class="container-info">
+
+    <h1> Details about: {{mymembers.lastname}} {{mymembers.firstname}} </h1>
+
+    <h2> Phone: {{mymembers.phone}}</h2>
+    <h2> Member since: {{mymembers.joined_date}} </h2>
+
+    <p> Back to: <a href="/members"> Members </a> </p>
+</div>
+{% endblock content %}

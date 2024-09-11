@@ -1,0 +1,54 @@
+{% extends "master.html" %} {# allows to display the file from the orginal using
+extend variable. #}
+{% load static %}
+
+{% block title %} {# This is the django format setup inside of the html page. #}
+
+My Football Club
+
+{% endblock title %}
+
+{% block content %}
+
+{% include "nav.html" %}
+
+<div class="main">
+    <div class="container-info">
+        <h1> My Football Club </h1>
+        <h3> Members of My Football Club </h3>
+        <br>
+        <h3 class="h3-text"> Check out all of our <a href="/members">
+                Members!</a>
+            <div class="arrow">
+                <img src="{% static 'images/arrow.png' %}">
+                <div class="arrow2nd">
+                    <img src="{% static 'images/2ndarrow.png' %}">
+                </div>
+
+                <h3> Football audio sound for extras </h3>
+                <br>
+                <audio controls>
+                    <source src="{% static 'media/media.mp3' %}">
+
+                </audio>
+
+                <div class="video">
+                <h3 class="style"> Video </h3>
+                <br>
+                <video controls width="200px" height="200px">
+                    <source src="{% static 'media/video.mp4' %}", type="video/mp4">
+                    your browser does not support this video element
+
+                </video>
+            </div>
+            </div>
+            </div>
+        </h3> {# hyperlink towards the members #}
+    </div>
+</div>
+
+<br>
+<br>
+{% include "footer.html" %}
+
+{% endblock content %}

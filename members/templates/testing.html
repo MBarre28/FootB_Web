@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> {# This is the django format setup inside of the html page. #}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing </title> {# This is a testing web-page #}
+    </head>
+    <body>
+        <h1> Website created by {{lastname}}, {{firstname}} </h1> {# Used these
+        variables from the back-end in the views towards the front end in html
+        based. #}
+
+        {% with fruit="watermelon" %}
+
+        My favourite fruit is {{fruit}}, it's very juicy and
+        scrumdiddlyumptious.
+
+        {% endwith %}
+
+        {% if greeting == 1 %} {# using an if statement to display hello world
+        in Django HTML. #}
+
+        <h3> Hello world </h3>
+
+        {% else %} {# else statment to display error code whilst implementing
+        the hello world. #}
+
+        <h3> error, hello world is not displaying, try again </h3>
+
+        {% endif %}
+
+        <p> testing to see if it's working </p>
+
+        {% for fruits in unordered_list %}
+
+        <ul>
+            <li> orange </li>
+            <li> apple </li>
+            <li> banana </li>
+            <li> Mango </li>
+        </ul>
+        {% endfor %}
+
+        {% include 'footer.html' %} {# Including the footer.html file. #}
+    </body>
+</html>

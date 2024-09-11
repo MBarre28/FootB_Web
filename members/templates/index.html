@@ -1,0 +1,42 @@
+{% extends "master.html" %}
+{% load static %}  {# This is the django format setup inside of the html page. #}
+{% block title %}
+My Football Club 
+{% endblock title %}
+
+{% block content %}
+
+{% block header %}
+
+{% include "nav.html" %}
+
+{% endblock header %}
+
+<br>
+<br>
+<div class="container">
+    <br>
+    <h1 class="container-header"> Members </h1>
+    <ul> 
+        {% for x in mymembers %} {# using for loop in django to append the members from the back-end database. #}
+
+
+        <li onclick="window.location = 'details/{{x.id}}'"> {{x.firstname}}, {{x.lastname}}</a></li>  {# displays the id in the hyperlink. #}
+
+ 
+
+         {% endfor %}
+
+
+    </ul>
+
+</div>
+
+
+
+<br>
+
+{% include "footer.html" %}
+
+
+{% endblock content %}

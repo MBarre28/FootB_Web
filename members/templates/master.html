@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html> {# This is the django format setup inside of the html page. #}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="{% static  'style.css' %}">  {# This is the link to the css file. #}
+    <title> {% block title %} {% endblock title %} </title>
+</head>
+<body>
+
+     {% block content %} 
+
+     {% include "nav.html" %} 
+
+
+    {% include "footer.html" %}
+
+
+
+     {% endblock content  %}
+
+    
+</body>
+</html>
