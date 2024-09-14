@@ -134,6 +134,27 @@ footer{
     padding: 50px;
 }
 
+.footer-style{
+    color: #ffff;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.a .footer-style {
+    
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+
+.footer-style a:hover{
+    color: #6868d69f;
+    text-decoration: underline;
+    transition: all .3s ease-in;
+}
+
 /* image styling  */
 
 .logo img{
