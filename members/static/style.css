@@ -13,8 +13,8 @@ body{
     font-size: 16px;
     background: url("websitebackground.PNG");
     background-size: cover;
-    background-position: no repeat scroll 0;
-    
+    background-position: none;
+
  }
 
 .navigation{
