@@ -1,6 +1,7 @@
 *{
     text-decoration: none;
     margin: 0;
+    background: url("images/websitebackground.PNG");
 }
 
 /* navigation styling */
@@ -11,7 +12,6 @@ body{
     letter-spacing: 0.5px;
     color:rgb(32, 29, 29);
     font-size: 16px;
-    background: url("images/websitebackground.PNG");
     background-size: cover;
     background-position: none;
 
